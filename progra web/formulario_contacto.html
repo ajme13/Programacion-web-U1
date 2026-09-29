@@ -29,7 +29,7 @@
     </nav>
 
     <main>
-        <h2>Formulario de afiliacion de cliente</h2>
+        <h2>Formulario de contacto</h2>
 
         <form action="afiliados.php" method="post" enctype="multipart/form-data"> <!--action apunta al backend(post es el metodo recomendado) -->
 
@@ -50,20 +50,15 @@
 
                     <label>Ingrese su direccion</label>
                     <input type="text" name="Direccion" id="direccion" required placeholder="Ingrese su direccion" minlength="11" maxlength="500">
+
+                    <label>Ingrese su empresa</label>
+                    <input type="text" name="Empresa" id="empresa" required placeholder="Ingrese su empresa" minlength="11" maxlength="500">
+
+                    <label>Mensaje</label>
+                    <input type="text" name="Mensaje" id="mensaje" required placeholder="Ingrese mensaje deseado" minlength="11" maxlength="500">
                 </div>
             </fieldset>
 
-            <fieldset>
-                <legend>Informacion de compra</legend>
-                <div>
-                    <label>Seleccione: </label>
-                    <select name="Sucursal" id="sucursal">
-                        <option selected>Blvd. Morazan</option>
-                        <option>City Mall</option>
-                        <option>Mall Premier</option>
-                    </select>
-                </div>
-            </fieldset>
 
         </form>
     </main>
